@@ -68,7 +68,7 @@
     },
     {
       "id": "REQ-003",
-      "description": "the website shall use react",
+      "description": "the website shall use react 18",
       "this_is_a": "Functional Requirement",
       "ReqStatus": "Pending",
       "ImpStatus": "Not Implemented"
