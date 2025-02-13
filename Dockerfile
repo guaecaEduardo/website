@@ -18,4 +18,4 @@ COPY generated/ /usr/share/nginx/html/generated/
 # COPY requirements/ /usr/share/nginx/html/requirements/
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8080
