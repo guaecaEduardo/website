@@ -19,3 +19,5 @@ COPY generated/ /usr/share/nginx/html/generated/
 
 # Expose port 80
 EXPOSE 8080
+
+RUN chmod -R 755 /usr/share/nginx/html
