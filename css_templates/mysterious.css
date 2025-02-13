@@ -1,0 +1,21 @@
+/* template5.css - Mysterious / Dark */
+body {
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #90caf9;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
