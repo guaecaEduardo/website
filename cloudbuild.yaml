@@ -15,7 +15,7 @@ steps:
         '--platform',
         'managed',
         '--region',
-        'europe-west10',
+        'europe-west1',
         '--quiet'
       ]
 images:
