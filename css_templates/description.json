@@ -1,0 +1,25 @@
+{
+    "css_templates": [
+      {
+        "name": "Happy / Joyful",
+        "description": "A bright and playful template featuring warm hues like yellow and orange. It uses a casual, fun font to evoke feelings of happiness, optimism, and cheerfulness—perfect for lighthearted, energetic sites."
+      },
+      {
+        "name": "Sad / Melancholic",
+        "description": "A reflective, subdued template characterized by cool tones such as deep blues and grays. It employs classic serif fonts to create a calm, introspective, and sometimes somber atmosphere, ideal for thoughtful, emotional content."
+      },
+      {
+        "name": "Energetic / Excited",
+        "description": "A dynamic template with bold, vivid colors like red and orange, complemented by subtle animations (e.g., a pulsing effect on headings). This design is intended to convey high energy, excitement, and action, making it great for lively, engaging websites."
+      },
+      {
+        "name": "Calm / Serene",
+        "description": "A soothing template that uses gentle pastels and clean, modern typography (like Helvetica Neue). Its soft gradients and minimalist style create a peaceful and relaxed vibe, perfect for websites that aim to promote tranquility and balance."
+      },
+      {
+        "name": "Mysterious / Dark",
+        "description": "A dramatic and intriguing template featuring deep, rich hues such as navy and dark blues, paired with a monospaced font. This design creates a sense of enigma and allure, ideal for websites with a bold, mysterious character."
+      }
+    ]
+  }
+  
