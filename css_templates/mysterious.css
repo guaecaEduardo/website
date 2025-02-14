@@ -1,21 +1,88 @@
-/* template5.css - Mysterious / Dark */
+/* mysterious.css - Mysterious / Dark */
+/* Color Palette: Deep, rich dark blues with contrasting light accents */
+:root {
+  --bg-gradient: linear-gradient(135deg, #1a237e, #0d47a1);
+  --primary-color: #e0e0e0;
+  --accent-color: #90caf9;
+  --text-color: #e0e0e0;
+  --font-family: 'Courier New', monospace;
+  --light-bg: rgba(0, 0, 0, 0.75);
+  --border-color: #90caf9;
+}
+
 body {
-    background: linear-gradient(135deg, #1a237e, #0d47a1);
-    font-family: 'Courier New', monospace;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #90caf9;
-    margin-bottom: 0.5em;
-  }
-  
-  p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
-  
+  background: var(--bg-gradient);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header, nav, footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+button, input[type="submit"] {
+  background: var(--accent-color);
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--light-bg);
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}

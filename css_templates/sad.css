@@ -1,21 +1,89 @@
-/* template2.css - Sad / Melancholic */
+/* sad.css - Sad / Melancholic */
+/* Color Palette: Deep blues and muted grays for a reflective mood */
+:root {
+  --bg-gradient: linear-gradient(135deg, #2c3e50, #34495e);
+  --primary-color: #ecf0f1;
+  --accent-color: #bdc3c7;
+  --text-color: #ecf0f1;
+  --font-family: 'Georgia', serif;
+  --light-bg: #ffffff;
+  --border-color: #bdc3c7;
+}
+
 body {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    font-family: 'Georgia', serif;
-    color: #ecf0f1;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #bdc3c7;
-    margin-bottom: 0.5em;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  
+  background: var(--bg-gradient);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header, nav, footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+button, input[type="submit"] {
+  background: var(--accent-color);
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--light-bg);
+  padding: 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
