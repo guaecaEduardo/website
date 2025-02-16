@@ -1,32 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website - Mysterious</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #1a237e, #0d47a1);
-      font-family: 'Courier New', monospace;
-      color: #e0e0e0;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      color: #90caf9;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaeca - A new era of Engineering Performance</title>
+    <style>
+/* calm.css - Calm / Serene */
+/* Color Palette: Soft pastel greens and neutrals */
+:root {
+  --bg-gradient: linear-gradient(135deg, #a8e6cf, #dcedc1);
+  --primary-color: #2e7d32;
+  --accent-color: #b2f2bb;
+  --text-color: #2e7d32;
+  --font-family: 'Helvetica Neue', sans-serif;
+  --light-bg: #ffffff;
+  --border-color: #dee2e6;
+}
+
+body {
+  background: var(--bg-gradient);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header, nav, footer {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Align items to both ends */
+  align-items: center; /* Vertically center align */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+
+
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+button, input[type="submit"] {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--accent-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--light-bg);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a sample webpage with a mysterious, dark design.</p>
+
+    <nav>
+        <div class="logo">Guaeca</div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+        <button>Contact Us</button>
+    </nav>
+
+    <section class="hero">
+        <h1>A new era of Engineering Performance</h1>
+        <p>Advanced AI tools for Engineers</p>
+    </section>
+
+    <section id="features" class="section features">
+        <h2>GREQ</h2>
+        <p>GREQ is a web app to make easier to review and coprrect requirements</p>
+    </section>
+
+    <footer class="footer">
+                <p> Big G</p>
+        <p>eduardo@guaeca.Fr</p>
+        <p>&copy; 2025 Guaeca. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

@@ -37,34 +37,17 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center align items */
+  align-items: center;
   padding: 0;
-}
-
-nav .logo {
-  font-size: 1.5em;
-  font-weight: bold;
 }
 
 nav ul li {
   margin: 0;
 }
 
-/* Contact Us button specific styles */
-.contact-button {
-    background: var(--primary-color);
-    color: #ff3d00;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin-left: auto; /* Push button to the right */
-  }
-  
-  .contact-button:hover {
-    background: var(--accent-color);
-  }
+.right-nav {
+    margin-left: auto; /* Push to right side */
+}
 
 a {
   color: var(--accent-color);
@@ -91,14 +74,28 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 0.5em;
-  text-align: center;
+  text-align: center;  
 }
 
 p {
   font-size: 1.2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
+button, input[type="submit"] {
+  background: var(--primary-color);
+  color: #ff3d00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--accent-color);
+}
 
 .container {
   max-width: 1200px;
@@ -123,9 +120,8 @@ p {
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="right-nav"><button>Contact Us</button></li>
         </ul>
-		<button class="contact-button">Contact Us</button>
     </nav>
 
     <section class="hero">
@@ -139,7 +135,10 @@ p {
     </section>
 
     <footer class="footer">
-        <p>Big G - eduardo@guaeca.Fr &copy; 2025 Guaeca. All rights reserved.</p>
+        <p>Big G</p>
+        <p>eduardo@guaeca.Fr</p>
+        <p>&copy; 2025 Guaeca. All rights reserved.</p>
+
     </footer>
 
 </body>
