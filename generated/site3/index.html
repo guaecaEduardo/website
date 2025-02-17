@@ -37,23 +37,16 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center align items */
+  align-items: center; /* Vertically center align */
   padding: 0;
 }
 
+
 nav ul li {
-    margin: 0;
+  margin: 0;
 }
-
-
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: auto; /* Push logo to the left */
-}
-
-.contact-button {
-    margin-left: auto; /* Push button to the right */
+.call-to-action {
+    margin-left: auto; /* Push to right */
 }
 
 a {
@@ -108,14 +101,15 @@ button:hover, input[type="submit"]:hover {
     </style>
 </head>
 <body>
+
     <nav>
         <div class="logo">Guaeca</div>
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#products">Products</a></li>
+            <li class="call-to-action"><button>Contact Us</button></li>
         </ul>
-        <button class="contact-button">Contact Us</button>
     </nav>
 
     <section class="hero">
@@ -130,6 +124,7 @@ button:hover, input[type="submit"]:hover {
             <p>GREQ is a web app to make easier to review and coprrect requirements.</p>
         </div>
     </section>
+
 
     <footer class="footer">
         <p>Big G</p>

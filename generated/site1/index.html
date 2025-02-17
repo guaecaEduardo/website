@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guaeca - A new era of Engineering Performance</title>
+    <title>Guaeca - Innovate the Future</title>
     <style>
 /* energetic.css - Energetic / Excited */
 /* Color Palette: Vibrant reds/oranges with high contrast */
@@ -37,30 +37,36 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center align */
+  align-items: center; /* Vertically center align items */
   padding: 0;
 }
 
+/* Add some spacing between logo and other nav elements */
 nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
     margin-right: auto; /* Push logo to the left */
-  }
+}
 
 nav ul li {
   margin: 0;
 }
 
-nav ul li a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: bold; 
-  transition: color 0.3s ease;
-  margin: 0 15px; 
 
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: var(--primary-color);
+}
 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
 a:hover {
   color: var(--primary-color);
@@ -117,20 +123,29 @@ button:hover, input[type="submit"]:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-button {
-    background-color: var(--accent-color);
-    color: #ff3d00;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  .contact-button:hover{
-    background: var(--primary-color);
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    /* background-color: #007bff;  Use gradient background */
+    background: var(--bg-gradient);
+    color: white; 
+}
 
-  }
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center content */
+    text-align: center; 
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 5px; /* Maintain consistent rounded corners */
+}
+
     </style>
 </head>
 <body>
@@ -140,9 +155,8 @@ button:hover, input[type="submit"]:hover {
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="contact-button">Contact Us</button>
     </nav>
 
     <section class="hero">
@@ -151,8 +165,8 @@ button:hover, input[type="submit"]:hover {
     </section>
 
     <section id="features" class="section features">
-        <h2>Why Choose Us?</h2>
-        <p>We build cutting-edge technology to enhance productivity and efficiency.</p>
+        <h2>GREQ</h2>
+        <p>GREQ is a web app to make easier to review and coprrect requirements</p>
     </section>
 
     <section id="about" class="section about">
@@ -160,17 +174,10 @@ button:hover, input[type="submit"]:hover {
         <p>We are a team of innovators dedicated to creating solutions for the future.</p>
     </section>
 
-        <section id="products" class="section about">
-        <h2>Products</h2>
-        <div class="card">
-            <h3>GREQ</h3>
-            <p>GREQ is a web app to make easier to review and coprrect requirements</p>
-        </div>
-    </section>
 
     <footer class="footer">
         <p>Big G</p>
-        <p>Contact: eduardo@guaeca.Fr</p>
+        <p>eduardo@guaeca.Fr</p>
         <p>&copy; 2025 Guaeca. All rights reserved.</p>
     </footer>
 

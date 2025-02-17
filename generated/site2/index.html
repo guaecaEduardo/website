@@ -36,19 +36,25 @@ header, nav, footer {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* Align items to both ends */
+  justify-content: space-between; /* Align logo left, navigation middle, contact right */
   align-items: center; /* Vertically center align items */
   padding: 0;
 }
 
-/* Add some spacing between logo and other nav items */
-nav .logo {
-    margin-right: auto; /* Push logo to the left */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: auto; /* Push logo to the left */
 }
 
 nav ul li {
-  margin: 0;
+    margin: 0;
 }
+
+.contact-button {
+    margin-left: auto; /* Push button to the right */
+}
+
 
 a {
   color: var(--text-color);
@@ -114,9 +120,9 @@ button:hover, input[type="submit"]:hover {
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button>Contact Us</button>
+        <button class="contact-button">Contact Us</button>
+
     </nav>
 
     <section class="hero">
@@ -125,21 +131,14 @@ button:hover, input[type="submit"]:hover {
     </section>
 
     <section id="features" class="section features">
-        <h2>Why Choose Us?</h2>
-        <p>We build cutting-edge technology to enhance productivity and efficiency.</p>
-          <div class="card">GREQ is a web app to make easier to review and coprrect requirements</div>
-
-    </section>
-
-    <section id="about" class="section about">
-        <h2>About Us</h2>
-        <p>We are a team of innovators dedicated to creating solutions for the future.</p>
+        <h2>GREQ</h2>
+        <p>GREQ is a web app to make easier to review and coprrect requirements.</p>
     </section>
 
     <footer class="footer">
         <p>Big G</p>
-        <p>eduardo@guaeca.Fr</p>
-        <p>&copy; 2025 Guaeca. All rights reserved.</p>
+        <p>Contact: eduardo@guaeca.Fr</p>
+	<p>&copy; 2025 Guaeca. All rights reserved.</p>
     </footer>
 
 </body>
