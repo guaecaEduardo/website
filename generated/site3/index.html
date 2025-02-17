@@ -37,16 +37,24 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center align */
+  align-items: center; /* Vertically center align items */
   padding: 0;
 }
 
 nav ul li {
-  margin: 0;
+    margin: 0;
 }
 
 
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto; /* Push logo to the left */
+}
 
+.contact-button {
+    margin-left: auto; /* Push button to the right */
+}
 
 a {
   color: var(--primary-color);
@@ -97,24 +105,17 @@ button:hover, input[type="submit"]:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
     </style>
 </head>
 <body>
-
     <nav>
         <div class="logo">Guaeca</div>
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
+            <li><a href="#products">Products</a></li>
         </ul>
-        <button>Contact Us</button>
+        <button class="contact-button">Contact Us</button>
     </nav>
 
     <section class="hero">
@@ -122,13 +123,16 @@ button:hover, input[type="submit"]:hover {
         <p>Advanced AI tools for Engineers</p>
     </section>
 
-    <section id="features" class="section features">
-        <h2>GREQ</h2>
-        <p>GREQ is a web app to make easier to review and coprrect requirements</p>
+    <section id="products" class="section features">
+        <h2>Products</h2>
+        <div class="card">
+            <h3>GREQ</h3>
+            <p>GREQ is a web app to make easier to review and coprrect requirements.</p>
+        </div>
     </section>
 
     <footer class="footer">
-                <p> Big G</p>
+        <p>Big G</p>
         <p>eduardo@guaeca.Fr</p>
         <p>&copy; 2025 Guaeca. All rights reserved.</p>
     </footer>
