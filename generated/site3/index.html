@@ -37,24 +37,28 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center align items */
+  align-items: center; /* Vertically center align */
   padding: 0;
 }
 
 nav ul li {
-    margin: 0;
+  margin: 0;
 }
-
-
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: auto; /* Push logo to the left */
-}
-
+/* Contact button styling */
 .contact-button {
-    margin-left: auto; /* Push button to the right */
-}
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: auto; /* Push to the right */
+  }
+  
+  .contact-button:hover {
+    background: var(--accent-color);
+  }
 
 a {
   color: var(--primary-color);
@@ -77,19 +81,6 @@ p {
   margin-bottom: 1em;
 }
 
-button, input[type="submit"] {
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover, input[type="submit"]:hover {
-  background: var(--accent-color);
-}
 
 .container {
   max-width: 1200px;
@@ -108,12 +99,13 @@ button:hover, input[type="submit"]:hover {
     </style>
 </head>
 <body>
+
     <nav>
         <div class="logo">Guaeca</div>
         <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="contact-button">Contact Us</button>
     </nav>
@@ -123,12 +115,9 @@ button:hover, input[type="submit"]:hover {
         <p>Advanced AI tools for Engineers</p>
     </section>
 
-    <section id="products" class="section features">
-        <h2>Products</h2>
-        <div class="card">
-            <h3>GREQ</h3>
-            <p>GREQ is a web app to make easier to review and coprrect requirements.</p>
-        </div>
+    <section id="features" class="section features">
+        <h2>GREQ</h2>
+        <p>GREQ is a web app to make easier to review and coprrect requirements.</p>
     </section>
 
     <footer class="footer">
